@@ -1,0 +1,87 @@
+/* 
+  Name: Bryan Oliveira
+  Date: April 11th, 2025
+
+  Description: This is the styles.css file for the home page of my 
+  portfolio website. It serves as an auxiliary stylesheet, defining the layout
+  and design of the home page's grid layout.
+*/
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  gap: 2em;
+}
+
+.grid-row {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+}
+
+.grid-item {
+  background-color: var(--nav-bg);
+  border-radius: 1em;
+  padding: 1.5em;
+  margin: 1em;
+  line-height: 1.7em;
+  flex: 1 1 45%;
+  transition: 1s;
+}
+
+.grid-item:hover {
+  background-color: var(--link-hover-bg);
+  transition: 1s;
+}
+
+.grid-item h2, p {
+  margin: .3em;
+  padding: .1em
+}
+
+.headshot h1 {
+  font-size: 2.5em;
+  margin: 1em 0 .2em 0;
+}
+
+.headshot {
+  text-align: center;
+}
+
+.headshot img {
+  width: 15%;
+  height: auto;
+  margin: auto;
+  display: block;
+  border: 3px solid var(--text-color); 
+  border-radius: 50%;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;
+}
+
+.headshot img:hover {
+  border: 3px solid var(--hover-color);
+  transition: .2s;
+}
+
+.socials {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  gap: 1%;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.socials i::before {
+  width: 40px;
+  height: 40px;
+  color: var(--hover-color);
+}
+
+.socials i:hover::before {
+  color: var(--text-color);
+  transition: .2s;
+}

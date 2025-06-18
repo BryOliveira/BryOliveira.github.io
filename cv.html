@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--
+  Name: Bryan Oliveira
+  Date: April 11th, 2025
+
+  Description: This will be the page that displays my CV. It will be extensive
+  and include everything from my education to my extracurriculars. 
+-->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Open Source SVG icons -->
+  <!-- Source: https://iconoir.com/ -->
+  <script src="./scripts/utils.js"></script>
+  <script src="./scripts/mode-handler.js" defer></script>
+  <script src="./scripts/dl-handler.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/cv-styles.css">
+</head>
+<body>
+  <header id="nav-bar">
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <button id="mode-btn"><i class="iconoir-sun-light"></i></button>
+        </li>
+        <li>
+          <a href="projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="cv.html">CV</a>
+        </li>
+      </ul>
+    </nav>  
+  </header>
+  <main>
+    <div class="cv">
+      <div id="headline">
+        <h1>Curriculum Vitae</h1>
+        <div id="file">
+          <label for="format-dropdown">File Format:</label>
+          <select name="file-formats" id="format-dropdown">
+            <option value="pdf">*.pdf</option>
+            <option value="tex">*.tex</option>
+          </select>
+        </div>
+        <button id="file-btn">
+          <i class="iconoir-download-square-solid"></i>
+        </button>
+      </div>
+      <div class="info-box">
+        <h2>Personal Info</h2>
+        <ul id="info">
+          <li><span class="bolded-text">Name: </span>Bryan Oliveira</li>
+          <li><span class="bolded-text">Email: </span><a href="mailto:boliveir@caltech.edu">boliveir@caltech.edu</a></li>
+          <li><span class="bolded-text">Spoken Languages: </span>English (Fluent), Portuguese (Fluent), Spanish (Conversational), Japanese (Elementary)</li>
+          <li>
+            <a href="https://github.com/BryOliveira" target="_blank"><button><i class="iconoir-github-circle"></i> GitHub</button></a> 
+            <a href="https://www.linkedin.com/in/bryan-r-oliveira/" target="_blank"><button><i class="iconoir-linkedin"></i> LinkedIn</button></a>
+          </li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <h2>Education</h2>
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p><span class="bolded-text">California Institute of Technology</span></p>
+        <p>Expected Graduation: June 2026</p>
+        <h3>Relevant Coursework: </h3>
+        <ul class="tag">
+          <li>Object-Oriented Programming</li>
+          <li>Algorithms and Complexity Analysis</li>
+          <li>Data Structures</li>
+          <li>Software Design</li>
+          <li>Systems Programming</li>
+          <li>Deep Learning Systems</li>
+          <li>Relational Databases</li>
+          <li>Differential Equations</li>
+          <li>Probability Models</li>
+          <li>Discrete Math</li>
+          <li>Web Development</li>
+          <li>Machine Learning and Data Mining</li>
+          <li>Integrated Circuits</li>
+          <li>Functional Programming</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <h2>Professional Experience</h2>
+        <h3>Navy Federal Credit Union</h3>
+        <p><strong>Software Engineer Intern</strong> | Vienna, VA<br>
+        June 2024 &mdash; September 2024</p>
+        <ul>
+          <li>Developed internal SharePoint portals for the Security, Financial, and Fraud teams, benefiting 60+ users by providing timely updates following organizational changes.</li>
+          <li>Designed over 30 custom UI icons and infographics using HTML, CSS, and JavaScript, enhancing internal branding and user experience.</li>
+          <li>Led the development of a JavaScript-based organizational chart web application to dynamically reflect structural changes across all ~24,000 employees, replacing outdated static diagrams.</li>
+        </ul>
+      </div>
+
+      <div class="info-box">
+        <h2>Projects</h2>
+
+        <h3>Comeback: RESTful Full-stack E-commerce Site</h3>
+        <p><strong>Technologies:</strong> JavaScript, Node.js, Express, Fetch API<br>
+        <em>May 2025 &mdash; June 2025</em></p>
+        <ul>
+          <li>Built a dynamic RESTful backend using Node.js and Express, managing endpoints for products, FAQs, user feedback, and loyalty programs.</li>
+          <li>Implemented robust front-end architecture with HTML/CSS and vanilla JavaScript, featuring user interactivity and responsive design.</li>
+          <li>Developed authentication and feedback systems using RESTful POST requests for a more personalized user experience.</li>
+        </ul>
+
+        <h3>Affor-db: House Affordability Database Application</h3>
+        <p><strong>Technologies:</strong> Python, MySQL<br>
+        <em>February 2025 &mdash; March 2025</em></p>
+        <ul>
+          <li>Built a CLI application that aggregates and analyzes housing, mortgage, and job market data, delivering affordability metrics based on over 450 job roles and 350 companies across all U.S. states.</li>
+        </ul>
+
+        <h3>Leggies: Physics-Based Fighting Game</h3>
+        <p><strong>Technologies:</strong> C, GitLab<br>
+        <em>May 2024 &mdash; June 2024</em></p>
+        <ul>
+          <li>Engineered a 1v1 multiplayer fighting game from scratch with realistic collision detection, sprite animations, and combat logic.</li>
+          <li>Developed a modular physics engine in C, applying object-oriented design for flexible gameplay mechanics.</li>
+          <li>Worked closely with a 3-person team using GitLab for version control and collaboration, ensuring a smooth development pipeline.</li>
+        </ul>
+      </div>
+
+      <div class="info-box">
+        <h2>Extracurriculars</h2>
+
+        <h3>Caltech Hispanic and Latino Association (SHPE Chapter)</h3>
+        <ul>
+          <li><strong>Outreach Coordinator</strong> (June 2025 &mdash; Present): Coordinating outreach initiatives and events to support Hispanic and Latino students in STEM fields.</li>
+          <li><strong>Social Director</strong> (June 2024 &mdash; June 2025): Organized social events to strengthen community ties and encourage mentorship among undergraduates.</li>
+        </ul>
+
+        <h3>Caltech Sunday League Soccer</h3>
+        <p><strong>Captain</strong> | February 2023 &mdash; Present</p>
+        <ul>
+          <li>Lead team practices and games, fostering teamwork and sportsmanship among a diverse group of student-athletes.</li>
+        </ul>
+
+        <h3>Caltech First-Year Success Research Institute</h3>
+        <p><strong>Peer Mentor</strong> | July 2023 &mdash; September 2023</p>
+        <ul>
+          <li>Mentored first-year students transitioning into rigorous academic environments, offering academic and personal guidance through workshops and one-on-one support.</li>
+        </ul>
+      </div>
+
+      <div class="info-box">
+        <h2>Skills</h2>
+        <p><strong>Languages:</strong> Python, JavaScript, C, C++, HTML, CSS, MySQL, Java, MATLAB</p>
+        <p><strong>Frameworks & Libraries:</strong> Node.js, Express, PyTorch, scikit-learn, pandas, Matplotlib, NumPy, CUDA, REST APIs, Fetch API</p>
+        <p><strong>DevOps & Tools:</strong> Git, VSCode, Linux, WSL, LaTeX</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
