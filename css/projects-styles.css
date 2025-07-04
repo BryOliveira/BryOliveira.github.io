@@ -51,9 +51,15 @@ main {
 .project-card {
   background-color: var(--link-hover-bg);
   border-radius: 10px;
-  max-height: fit-content;
+  max-height: max-content;
   padding-bottom: 1em;
   overflow: hidden;
+  transition: .2s;
+  box-shadow: 0 2px 8px .25px color-mix(in srgb, var(--text-color) 25%, transparent);
+}
+
+.project-card:hover {
+  transform: scale(1.015);
 }
 
 .project-card h2, p{
@@ -61,11 +67,11 @@ main {
 }
 
 .project-card h2 {
-  font-size: 1.5rem;
+  font-size: 18px;
 }
 
 .project-card p {
-  font-size: 1rem;
+  font-size: 14px;
 }
 
 .project-card a {
@@ -80,12 +86,23 @@ main {
   margin: 0 20px;
   padding: 0;
   flex-wrap: wrap;
+  font-size: 14px;
+  
 }
 
 .filter-tags li {
   background-color: var(--tag-bg);
   padding: .2em .5em;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+}
+
+.filter-tags li > i::before {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
 }
 
 .filter-tags li:hover {

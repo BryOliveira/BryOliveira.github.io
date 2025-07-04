@@ -61,11 +61,13 @@
   border-radius: 50%;
   aspect-ratio: 1 / 1; 
   object-fit: cover;
+  transition: .2s;
 }
 
 .headshot img:hover {
   border: 3px solid var(--hover-color);
   transition: .2s;
+  transform: scale(1.1);
 }
 
 .socials {
