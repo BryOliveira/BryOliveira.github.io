@@ -22,15 +22,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body
-        className={`${nunito.variable} antialiased bg-gradient-to-tl from-pink-300 to-sky-300`}
-        >
-        <main className='flex flex-col relative z-1 min-h-screen'>
-          <ParticleBackground/>
+      <body className={`font-[nunito] antialiased bg-gradient-to-tl from-pink-300 to-sky-300 min-h-screen`}>
+        <ParticleBackground />
+        <div className='relative z-10'>
           <NavBar />
-          {children}
-          <Footer />
-        </main>
+          <main className='flex flex-col pt-36'>
+            {children}
+            <Footer />
+          </main>
+        </div>
       </body>
     </html>
   );

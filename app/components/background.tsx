@@ -53,13 +53,13 @@ export default function ParticleBackground() {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 90,
         },
         opacity: {
           value: 0.8,
         },
         shape: {
-          type: "circle",
+          type: 'circle',
         },
         size: {
           value: { min: 1, max: 4 },
@@ -70,20 +70,15 @@ export default function ParticleBackground() {
   );
 
   if (!init) {
-    return (
-      <div>
-        <p>Loading...</p>
-      </div>
-    );
+    return null;
   }
 
   return (
-    <div className='fixed inset-0 z-2 mix-blend-color-dodge'>
-      <Particles 
-        id='tsparticles'
-        particlesLoaded={particlesLoaded}
-        options={options}
-      />
-    </div>
+    <Particles 
+      id='tsparticles'
+      particlesLoaded={particlesLoaded}
+      options={options}
+      className='bg-fixed inset-0 w-full h-full pointer-events-none -z-1'
+    />
   );
 }
