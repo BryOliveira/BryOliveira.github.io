@@ -55,7 +55,7 @@ export default function Skills() {
             <SkillCard color='orange' skill='scikit-learn'><SiScikitlearn size={18} /></SkillCard>
             <SkillCard color='orange' skill='Matplotlib'><MdScatterPlot size={18} /></SkillCard>
             <SkillCard color='orange' skill='pandas'><SiPandas size={18} /></SkillCard>
-            <SkillCard color='orange' skill='pandas'><BsNvidia size={18} /></SkillCard>
+            <SkillCard color='orange' skill='CUDA'><BsNvidia size={18} /></SkillCard>
           </div>
         </div>
       </div>
