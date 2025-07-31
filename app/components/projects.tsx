@@ -81,17 +81,19 @@ export default function Projects() {
             </div>
           </ProjectCard>
           
-          <ProjectCard
-            img='/leggies.png'
-            title='Leggies'
-            desc='Collaboratively created C-based game using a built-from-scratch physics engine and SDL.'
-            projectLink='https://github.com/BryOliveira/affor-db'
-          >
-            <div className='flex flex-wrap gap-1'>
-              <ProjectSkill skill='C'/>
-              <ProjectSkill skill='SDL2'/>
-            </div>
-          </ProjectCard>
+          <div className='pointer-events-none'>
+            <ProjectCard
+              img='/leggies.png'
+              title='Leggies'
+              desc='Collaboratively created C-based game using a built-from-scratch physics engine and SDL.'
+              projectLink=''
+            >
+              <div className='flex flex-wrap gap-1'>
+                <ProjectSkill skill='C'/>
+                <ProjectSkill skill='SDL2'/>
+              </div>
+            </ProjectCard>
+          </div>
 
           <ProjectCard
             img='/thumbnail.png'
