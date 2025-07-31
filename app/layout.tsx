@@ -26,7 +26,7 @@ export default function RootLayout({
         <ParticleBackground />
         <div className='relative z-10'>
           <NavBar />
-          <main className='flex flex-col pt-36'>
+          <main className='flex flex-col pt-36 items-center'>
             {children}
             <Footer />
           </main>

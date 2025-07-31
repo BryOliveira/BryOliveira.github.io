@@ -6,7 +6,7 @@ import Experience from './components/experience';
 
 export default function Page() {
   return (
-    <div className='flex-col justify-items-center'>
+    <div className='flex flex-col items-center'>
       <About />
       <Skills />
       <Education />
