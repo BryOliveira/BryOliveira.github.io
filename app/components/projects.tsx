@@ -121,14 +121,6 @@ export default function Projects() {
               <ProjectSkill skill='Chrome API'/>
             </div>
           </ProjectCard>
-
-          <Link href='/projects'>
-            <div className='flex gap-2 bg-gray-400/30 rounded-lg min-h-[290px]
-                            hover:scale-102 transition-all duration-200 justify-center
-                            items-center text-gray-100 border-2'>
-              <p className='text-4xl '>View More</p> <FaArrowRight size={36} />
-            </div>
-          </Link>
         </div>
       </div>
     </section>
