@@ -8,7 +8,7 @@ export default function Socials() {
       <CustomIcon href='https://www.linkedin.com/in/bryan-r-oliveira/'><SiLinkedin size={28} /></CustomIcon>
       <CustomIcon href='https://github.com/BryOliveira'><SiGithub size={28} /></CustomIcon>
       <CustomIcon href='mailto:boliveir@caltech.edu'><TbMail size={28} /></CustomIcon>
-      <CustomIcon href=''><SiGoogledocs size={24}/></CustomIcon>
+      <CustomIcon href='/boli_fs.pdf' target='_blank' rel='noopener noreferrer'><SiGoogledocs size={24}/></CustomIcon>
     </div>
   );
 }

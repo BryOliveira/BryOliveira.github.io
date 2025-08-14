@@ -10,7 +10,7 @@ export default function Education() {
           <h5 className='font-bold'>Graduate-level Courses:</h5>
             <p>
               Deep Learning Systems, Relational Databases, Web Development, Machine Learning and Data Mining,
-              Operating Systems, Compilers, Networks
+              Operating Systems, Compilers, Network Architecture, Software Engineering
             </p>
           <h5 className='font-bold'>Undergraduate-level Courses:</h5>
             <p>
